@@ -17,9 +17,9 @@ export default function Docs() {
             <div className="ex">
               <h2> Example {index + 1}</h2>
               <div className="nameofex">- markdown</div>{" "}
-              <p className="des">-{e.markdown}</p>
+              <p className="des">{e.markdown}</p>
               <div className="nameofex">- html</div>{" "}
-              <p className="des">-{e.html}</p>
+              <p className="des">{e.html}</p>
             </div>
           ))}
           {e.additional_examples.map((e) => (
@@ -27,9 +27,9 @@ export default function Docs() {
               <h2> {e.name}</h2>
               <p className="des">{e.description}</p>
               <div className="nameofex">- markdown</div>{" "}
-              <p className="des">-{e.markdown}</p>
+              <p className="des">{e.markdown}</p>
               <div className="nameofex">- html</div>{" "}
-              <p className="des">-{e.html}</p>
+              <p className="des">{e.html}</p>
             </div>
           ))}
           <hr className="line" />
